@@ -1,0 +1,9 @@
+workflows:
+  Neostore-Demo-workflow:
+    name: CICD Workflow
+    scripts:
+    - name: iOS unit test
+      script: |
+        xcode-project run-tests \
+            --project "Unit Testing.xcodeproj"\
+            --scheme "Unit Testing"
